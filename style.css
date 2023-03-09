@@ -108,3 +108,73 @@ margin-right: 5px;
     padding: 10px 12px;
 
 }
+.card-1 ,.card-2 ,.card-3 ,.card-4 {
+    height: 350px;
+    width: auto;
+    background-position: center ,center;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    border-radius: 9px;
+}
+.card-1{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.05) 50%, rgba(0, 0, 0, 0.05) 85%) , url("images/footer/wordthy-place.jpg");
+}
+.card-2{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.05) 50%, rgba(0, 0, 0, 0.05) 85%), url("images/footer/dinner.png");
+}
+.card-3{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.05) 50%, rgba(0, 0, 0, 0.05) 85%),url("images/footer/rooftop.jpg");
+}
+.card-4{
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.05) 50%, rgba(0, 0, 0, 0.05) 85%), url("images/footer/unique-dinning.jpg");
+}
+.card-head{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    color: white;
+    font-size: 18px;
+    padding-left: 10px;
+    word-spacing: 2px;
+}
+.text-head{
+    font-size: 14px;
+    padding-left: 10px;
+}
+.text-head span i{
+    font-size: 10px;
+}
+
+.places{
+    border: 1px solid #e6e3e3;
+    padding: 12px 15px;
+    border-radius: 6px;
+    margin: 15px 0;
+    text-transform: capitalize;
+    color: #1c1c1c;
+}
+.places .local .fs-4{
+    font-size: 20px !important;
+}
+
+.text-2-2{
+    font-size: 16px !important;
+    color: #363636;
+}
+.more{
+    display: none;
+}
+.places-head{
+    font-size: 36px;
+    color: #363636;
+}
+.bod{
+    border: 2px solid #e6e3e3;
+    margin-right: 15px;
+    border-radius: 7px;
+    color: #474747;
+}
+@media only screen and (max-width: 767px) {
+    
+}

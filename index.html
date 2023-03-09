@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section id="navbar">
+        <nav class="navbar navbar-expand-lg bg-body-light justify-content-between">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img src="images/logos/zomato-logo.png" width="140" alt="">
+            </a>
+            <!-- search togle button  -->
+            <div class="input-group-append">
+              <button class="btn-color navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent-1" aria-controls="navbarSupportedContent-1" aria-expanded="false" aria-label="Toggle navigation">
+                  <i class="fas fa-search fa-sm"></i>
+              </button>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class="fa-solid fa-user"></i></span>
+              </button> 
+              <!-- toggle 2  -->
+            </div>
+            
+            <form class="form-inline ms-lg-5 my-2 my-md-0 mw-100 navbar-search">
+              <div class="input-group">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent-1">
+                  <div class="d-flex">
+                      <div>
+                        <span class="locate"><i class="fa-solid fa-location-dot"></i></span>
+                        <input type="text" class="bg-light border-0 small" placeholder="Mumbai">
+                      </div>
+                     <div class="divider"></div>
+                      <div>
+                        <span class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <input type="text" class="border-0 small" style="width: 450px;" placeholder="Search for resturant, cuisine or a dish"
+                          aria-label="Search" aria-describedby="basic-addon2">
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sign up</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </section>
+    <!-- section 1 end  -->
+    <!-- section 2 started -->
+    <section id="pages">
+      <div class="container-fluid">
+        <ul class="links d-flex p-0">
+          <li class="list-items">
+        <span><i class="fa-solid fa-motorcycle"></i></span>
+            <a href="">Delivery</a>
+          </li>
+          <li class="list-items">
+            <span><i class="fa-sharp fa-solid fa-utensils"></i></span>
+                <a href="">Dining out</a>
+              </li>
+              <li class="list-items">
+                <span><i class="fa-solid fa-bottle-droplet"></i></span>
+                    <a href="">Nightlife</a>
+                  </li>
+        </ul>
+      </div>
+    </section>
+    <section class="filter">
+      <nav class="navbar navbar-expand-lg bg-body-light">
+        <div class="container">
+          <div class="navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item bod">
+                <a class="nav-link" aria-current="page" href="#"> <span><i class="fa-solid fa-filter"></i></span>
+                  Filter</a>
+              </li>
+              <li class="nav-item bod">
+                <a class="nav-link" href="#">Rating 4.0+</a>
+              </li>
+              <li class="nav-item bod">
+                <a class="nav-link" href="#">Pure veg</a>
+              </li>
+              <li class="nav-item bod">
+                <a class="nav-link " href="#">cousine</a>
+              </li>
+              <li class="nav-item bod dropdown">
+                <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  More filter
+                </a>
+                <div class="dropdown-menu p-4">
+                  <div>
+                    <p class="fs-3 m-0">More filter</p>
+                  </div>
+                  <form>
+                    <span class="search-icon-1"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <input type="text" class="border-0 small drop" placeholder="Search for resturant, cuisine or a dish"
+                      aria-label="Search" aria-describedby="basic-addon2">
+                      <input type="checkbox" class="check"><span class="fs-6">Get  Offer</span>
+                      <div class="d-flex justify-content-end border-top border-tertiary pt-4 pb-1 mt-5">
+                        <button type="button" class="fs-6 btn-1">Clear All</button>
+                        <input type="submit" value="Apply" class="sub fs-5">
+                      </div>
+                  </form>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <section id="end">
+      <div class="container-fluid">
+        <div class="d-flex justify-content-center align-items-center" style="height: 400px;">
+          <div class="d-flex align-items-center me-md-5">
+            <p class="fs-3 fw-semibold m-0">End of Search Result</p>
+          </div>
+          <div>
+            <img src="images/logos/house.jpg" height="130" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="end-2">
+      <div class="container">
+        <div>
+          <p class="fs-1 fw-semibold m-0">Collections</p>
+        </div>
+        <div class="d-flex justify-content-between fs-5 mb-4">
+          <p>Explore curated lists of top restaurants, cafes, pubs, and bars in Mumbai, based on trends</p>
+          <p class="text-danger">All collection in Mumbai <span><i class="fa-solid fa-chevron-right"></i></span></p>
+        </div>
+        <!-- cards initaize  -->
+        <!-- card 1 -->
+        <div class="row mb-5">
+          <div class="col-lg-3 col-md-3 col-sm-6">
+              <div class="card-1 d-flex align-items-end">
+                <div>
+                  <p class="card-head m-0">16 Best Insta-worthy Places</p>
+                  <p class="text-light text-head">16 Places <span><i class="fa-solid fa-chevron-right"></i></span></p>
+                </div>
+              </div>
+          </div>
+          <!-- card 2 -->
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="card-2 d-flex align-items-end">
+              <div>
+                <p class="card-head m-0">13 Romantic Dining Places</p>
+                <p class="text-light text-head">13 Places <span><i class="fa-solid fa-chevron-right"></i></span></p>
+              </div>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="card-3 d-flex align-items-end">
+              <div>
+                <p class="card-head m-0">17 Serene Rooftop Places</p>
+                <p class="text-light text-head">17 Places <span><i class="fa-solid fa-chevron-right"></i></span></p>
+              </div>
+            </div>
+          </div>
+          <!-- card 4 -->
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="card-4 d-flex align-items-end">
+              <div>
+                <p class="card-head m-0">6 Unique Dining Experiences</p>
+                <p class="text-light text-head">6 Places <span><i class="fa-solid fa-chevron-right"></i></span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card end  -->
+      </div>
+    </section>
+    <!-- popular country places  -->
+    <section>
+      <div class="container">
+        <div>
+          <p class="places-head m-0">Popular localities in and around <span class="fw-semibold">Mumbai</span></p>
+        </div>
+        <div class="row">
+          <!-- place row 1 -->
+          <div class="col-lg-4 col-md-4 ">
+            <div class="d-flex justify-content-between places">
+              <div class="local">
+                <p class="fs-4 m-0">Lower parel</p>
+                <p class="m-0 text-2-2">402 Places</p>
+              </div>
+              <div class="chew d-flex align-items-center"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 ">
+            <div class="d-flex justify-content-between places">
+              <div class="local">
+                <p class="fs-4 m-0">Powai</p>
+                <p class="m-0 text-2-2">361 Places</p>
+              </div>
+              <div class="chew d-flex align-items-center"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 ">
+            <div class="d-flex justify-content-between places">
+              <div class="local">
+                <p class="fs-4 m-0">malad West</p>
+                <p class="m-0 text-2-2">801 Places</p>
+              </div>
+              <div class="chew d-flex align-items-center"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+          </div>
+          <!-- place row 1 end -->
+           <!-- place row 2 -->
+           <div class="col-lg-4 col-md-4 ">
+            <div class="d-flex justify-content-between places">
+              <div class="local">
+                <p class="fs-4 m-0">borivali West</p>
+                <p class="m-0 text-2-2">575 Places</p>
+              </div>
+              <div class="chew d-flex align-items-center"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 ">
+            <div class="d-flex justify-content-between places">
+              <div class="local">
+                <p class="fs-4 m-0">bandra khurla complex</p>
+                <p class="m-0 text-2-2">108 Places</p>
+              </div>
+              <div class="chew d-flex align-items-center"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 ">
+            <div class="d-flex justify-content-between places">
+              <div class="local">
+                <p class="fs-4 m-0">vashi</p>
+                <p class="m-0 text-2-2">565 Places</p>
+              </div>
+              <div class="chew d-flex align-items-center"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+          </div>
+          <!-- place row 2 end -->
+           <!-- place row 3 -->
+           <div class="col-lg-4 col-md-4 ">
+            <div class="d-flex justify-content-between places">
+              <div class="local">
+                <p class="fs-4 m-0">fort</p>
+                <p class="m-0 text-2-2">236 Places</p>
+              </div>
+              <div class="chew d-flex align-items-center"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 ">
+            <div class="d-flex justify-content-between places">
+              <div class="local">
+                <p class="fs-4 m-0">jhuhu</p>
+                <p class="m-0 text-2-2">215 Places</p>
+              </div>
+              <div class="chew d-flex align-items-center"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4" id="show" onclick="hide()" style="cursor: pointer;" >
+            <div class="d-flex justify-content-between places">
+              <div class="local">
+                <p class="fs-4 m-0">show more</p>
+                <p class="m-0 text-2-2" style="visibility: hidden;">147 Places</p>
+              </div>
+              <div class="chew d-flex align-items-center"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+          </div>
+          <!-- place row 3 end -->
+           <!-- place row 4 -->
+           <div class="col-lg-4 col-md-4 more">
+            <div class="d-flex justify-content-between places">
+              <div class="local">
+                <p class="fs-4 m-0">andheri lokandwala</p>
+                <p class="m-0 text-2-2">316 Places</p>
+              </div>
+              <div class="chew d-flex align-items-center"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 more">
+            <div class="d-flex justify-content-between places">
+              <div class="local">
+                <p class="fs-4 m-0">colaba</p>
+                <p class="m-0 text-2-2">134 Places</p>
+              </div>
+              <div class="chew d-flex align-items-center"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 more">
+            <div class="d-flex justify-content-between places">
+              <div class="local">
+                <p class="fs-4 m-0">linking road, bandra  West</p>
+                <p class="m-0 text-2-2">147 Places</p>
+              </div>
+              <div class="chew d-flex align-items-center"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+          </div>
+          <!-- place row 4 end -->
+           <!-- place row 5 -->
+           <div class="col-lg-4 col-md-4 more">
+            <div class="d-flex justify-content-between places">
+              <div class="local">
+                <p class="fs-4 m-0">khar</p>
+                <p class="m-0 text-2-2">189 Places</p>
+              </div>
+              <div class="chew d-flex align-items-center"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 more">
+            <div class="d-flex justify-content-between places">
+              <div class="local">
+                <p class="fs-4 m-0">pali hill, bandra west</p>
+                <p class="m-0 text-2-2">125 Places</p>
+              </div>
+              <div class="chew d-flex align-items-center"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 more">
+            <div class="d-flex justify-content-between places">
+              <div class="local">
+                <p class="fs-4 m-0">chembur</p>
+                <p class="m-0 text-2-2">638 Places</p>
+              </div>
+              <div class="chew d-flex align-items-center"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+          </div>
+          <!-- place row 5 end -->
+           <!-- place row 6 -->
+           <div class="col-lg-4 col-md-4 more">
+            <div class="d-flex justify-content-between places">
+              <div class="local">
+                <p class="fs-4 m-0">marol</p>
+                <p class="m-0 text-2-2">269 Places</p>
+              </div>
+              <div class="chew d-flex align-items-center"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 more">
+            <div class="d-flex justify-content-between places">
+              <div class="local">
+                <p class="fs-4 m-0">veera desai area</p>
+                <p class="m-0 text-2-2">94 Places</p>
+              </div>
+              <div class="chew d-flex align-items-center"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 more">
+            <div class="d-flex justify-content-between places">
+              <div class="local">
+                <p class="fs-4 m-0">goregaon east</p>
+                <p class="m-0 text-2-2">286 Places</p>
+              </div>
+              <div class="chew d-flex align-items-center"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+          </div>
+          <!-- place row 6 end -->
+           <!-- place row 7 -->
+           <div class="col-lg-4 col-md-4 more">
+            <div class="d-flex justify-content-between places">
+              <div class="local">
+                <p class="fs-4 m-0">mira road</p>
+                <p class="m-0 text-2-2">1260 Places</p>
+              </div>
+              <div class="chew d-flex align-items-center"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 more">
+            <div class="d-flex justify-content-between places">
+              <div class="local">
+                <p class="fs-4 m-0">Panch Pakhadi, Thane West</p>
+                <p class="m-0 text-2-2">147 Places</p>
+              </div>
+              <div class="chew d-flex align-items-center"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 more">
+            <div class="d-flex justify-content-between places">
+              <div class="local">
+                <p class="fs-4 m-0">worli</p>
+                <p class="m-0 text-2-2">184 Places</p>
+              </div>
+              <div class="chew d-flex align-items-center"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+          </div>
+          <!-- place row 7 end -->
+           <!-- place row 8 -->
+           <div class="col-lg-4 col-md-4 more">
+            <div class="d-flex justify-content-between places">
+              <div class="local">
+                <p class="fs-4 m-0">sakinaka</p>
+                <p class="m-0 text-2-2">173 Places</p>
+              </div>
+              <div class="chew d-flex align-items-center"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 more">
+            <div class="d-flex justify-content-between places">
+              <div class="local">
+                <p class="fs-4 m-0">mulund, west</p>
+                <p class="m-0 text-2-2">404 Places</p>
+              </div>
+              <div class="chew d-flex align-items-center"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 more">
+            <div class="d-flex justify-content-between places">
+              <div class="local">
+                <p class="fs-4 m-0">chakala</p>
+                <p class="m-0 text-2-2">249 Places</p>
+              </div>
+              <div class="chew d-flex align-items-center"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+          </div>
+          <!-- place row 8 end -->
+           <!-- place row 9 -->
+           <div class="col-lg-4 col-md-4 more">
+            <div class="d-flex justify-content-between places">
+              <div class="local">
+                <p class="fs-4 m-0">hill road bandra, West</p>
+                <p class="m-0 text-2-2">108 Places</p>
+              </div>
+              <div class="chew d-flex align-items-center"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 more">
+            <div class="d-flex justify-content-between places">
+              <div class="local">
+                <p class="fs-4 m-0">oshiwara, andheri West</p>
+                <p class="m-0 text-2-2">179 Places</p>
+              </div>
+              <div class="chew d-flex align-items-center"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 more">
+            <div class="d-flex justify-content-between places">
+              <div class="local">
+                <p class="fs-4 m-0">mahakali</p>
+                <p class="m-0 text-2-2">235 Places</p>
+              </div>
+              <div class="chew d-flex align-items-center"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+          </div>
+          <!-- place row 9 end -->
+           <!-- place row 10 -->
+           <div class="col-lg-4 col-md-4 more">
+            <div class="d-flex justify-content-between places">
+              <div class="local">
+                <p class="fs-4 m-0">kharghar</p>
+                <p class="m-0 text-2-2">701 Places</p>
+              </div>
+              <div class="chew d-flex align-items-center"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 more">
+            <div class="d-flex justify-content-between places">
+              <div class="local">
+                <p class="fs-4 m-0">kandivali West</p>
+                <p class="m-0 text-2-2">553 Places</p>
+              </div>
+              <div class="chew d-flex align-items-center"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 more">
+            <div class="d-flex justify-content-between places">
+              <div class="local">
+                <p class="fs-4 m-0">churchgate</p>
+                <p class="m-0 text-2-2">51 Places</p>
+              </div>
+              <div class="chew d-flex align-items-center"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 more" onclick="show()" style="cursor: pointer;" >
+            <div class="d-flex justify-content-between places">
+              <div class="local">
+                <p class="fs-4 m-0">show less</p>
+                <p class="m-0 text-2-2" style="visibility: hidden;">51 Places</p>
+              </div>
+              <div class="chew d-flex align-items-center"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+          </div>
+          <!-- place row 10 end -->
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
