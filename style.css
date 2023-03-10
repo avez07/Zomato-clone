@@ -226,7 +226,72 @@ margin-right: 5px;
 .owl-img-1{
     border-radius: 10%;
 }
+.para{
+    background-color:#fffefe ;
+    color: #1c1c1c;
+    width: 100%;
+    margin: auto;
+    font-weight: 400;
+    border-radius: 0;
+    font-size: 18px;
+    padding: 10px 20px;
+   border-radius:0 5px;
+   text-align: justify;
 
+}
+.btn-3{
+    width: 100%;
+    text-align: left;
+    padding: 20px 24px;
+    font-size: 20px;
+    font-weight: 400;
+   background-color: #fffefe;
+   color: #1c1c1c;
+   border: 1px solid  #c0bebe;
+   border-radius: 5px;
+
+   
+}
+.btn-3:active .plus{
+    rotate: 45deg;
+}
+.plus{
+    color: #1c1c1c !important;
+}
+.drop-mar{
+    margin: 20px 10px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 15px 15px;
+    list-style: none;
+    padding: 10px 0;
+}
+.list-head, .list-para{
+    list-style-type: none;
+    padding: 0;
+}
+.earth{
+    position: relative;
+    color: #000000;
+    left: 33px;
+    font-size: 19px;
+    top: 1.5px;
+}
+.drop-1{
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    background-color: transparent;
+    padding: 7px 15px 7px 30px;
+    border-radius: 6px;
+    outline: none;
+}
+.last-para{
+    font-size: 13px;
+    margin: 25px 0;
+}
 @media only screen and (max-width: 767px) {
     .bod {
         border: 2px solid #e6e3e3;
@@ -278,6 +343,13 @@ margin-right: 5px;
     #pages{
         position: static !important;
     }
+    .grid{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 15px 15px;
+        list-style: none;
+        padding: 0;
+    }
 }
 @media only screen and (max-width: 300px) {
 .bod {
@@ -297,4 +369,13 @@ margin-right: 5px;
     font-size: 22px;
     color: #999797;
 }
+}
+@media only screen and (min-width: 767px) and  (max-width: 992px) {
+    .grid{
+        display: grid;
+        grid-template-columns: auto auto auto ;
+        grid-gap: 15px 15px;
+        list-style: none;
+        padding: 0;
+    }
 }
