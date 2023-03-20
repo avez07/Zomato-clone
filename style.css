@@ -292,6 +292,42 @@ margin-right: 5px;
     font-size: 13px;
     margin: 25px 0;
 }
+.discount{
+    position: absolute;
+    bottom:145px;
+    width: 95%;
+}
+.dis{
+    font-size: 15.5px;
+    padding: 0 6px;
+    background-color: #3063e5;
+    color: #ffffff;
+    font-weight: 500;
+    height:23px;
+}
+.minuts{
+    font-size: 13px;
+    color: #000000;
+    background-color: #ffffffcc;
+    padding: 2px 5px 3px;
+    border: 1px solid #2d2d2d;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.over{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+   width: 187px;
+}
+.trade{
+    background-color: #717ebe;
+    border-radius: 50%;
+    padding: 3.5px;
+    font-size: 11px;
+    height: 20px;
+    width: auto;
+}
 @media only screen and (max-width: 767px) {
     .bod {
         border: 2px solid #e6e3e3;
